@@ -12,9 +12,9 @@ function Contact() {
     <section className="">
       <div className="container relative mx-auto py-20 px-2">
         <div className="mx-auto" style={{ maxWidth: "50ch" }}>
-          <h2 className="text-6xl text-indigo-800">Get in touch</h2>
+          <h2 className="text-6xl">Get in touch</h2>
           <p className="text-xl text-slate-500 mt-6">
-            Email me at <a href={`mailto:${email}`} target="_blank" onClick={handleClick()}><span className="text-indigo-600 underline">{email}</span></a>
+            Email me at <a href={`mailto:${email}`} target="_blank" onClick={handleClick()}><span className="text-indigo-700 underline">{email}</span></a>
           </p>
         </div>
       </div>
