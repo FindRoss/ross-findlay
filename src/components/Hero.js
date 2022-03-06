@@ -1,4 +1,4 @@
-import forest from '../assets/forest.jpg'
+// import forest from '../assets/forest.jpg'
 
 export default function Hero() {
 
