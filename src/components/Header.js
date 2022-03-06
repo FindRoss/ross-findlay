@@ -25,11 +25,11 @@ function Header() {
     <header className="py-5">
       <div className="container mx-auto">
         <div className="grid grid-cols-8 grid-rows-1 gap-4">
-          <div className="col-span-2 flex items-center">
-            <span><img src={logo} alt="logo" className="h-8 w-auto px-4" /></span>
-            <h1 className="text-2xl">Ross Findlay</h1>
+          <div className="col-span-6 md:col-span-2 flex items-center">
+            <span><img src={logo} alt="logo" className="h-10 w-10 mr-4" /></span>
+            <h1 className="text-2xl font-light">Ross Findlay</h1>
           </div>
-          <div className="col-span-4 flex items-center hidden">
+          <div className="col-span-8 row-start-2 md:row-start-1 md:col-span-4 flex items-center hidden">
             <nav>
               <ul className="flex">
                 {headingLinks.map((link, index) => (
@@ -38,7 +38,7 @@ function Header() {
               </ul>
             </nav>
           </div>
-          <div className="col-span-2 hidden">
+          <div className="col-span-2 flex items-center justify-center">
             <span>🔧</span>
           </div>
         </div>
