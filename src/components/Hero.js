@@ -1,4 +1,3 @@
-import forest from '../assets/forest.jpg'
 // source https://unsplash.com/photos/_gu7E90QChU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 
 export default function Hero() {
