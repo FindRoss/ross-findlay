@@ -16,6 +16,7 @@ function App() {
       <Hero />
       <About />
       <Contact />
+      foobartesting
       <Footer />
     </div>
   );
