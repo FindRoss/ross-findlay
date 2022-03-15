@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowUpRightFromSquare } from '@fortawesome/free-solid-svg-icons'
 
 function Project({ data }) {
-  const { title, description, logo, github, website } = data;
+  const { title, description, github, website } = data;
 
   const logoFinder = (title) => {
     switch (title) {
