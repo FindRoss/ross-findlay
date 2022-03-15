@@ -1,22 +1,28 @@
 // source https://unsplash.com/photos/_gu7E90QChU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
 
-export default function Hero() {
-
+function Hero() {
   // host on https://vercel.com 
   return (
-    <section className="relative">
-      <div className="container mx-auto">
+    <section>
+      <div className="container relative mx-auto py-36 px-8">
         <div className="flex flex-col justify-center">
-          <div className="py-40">
-            <h1 className="text-7xl text-slate-800"><span>Frontend</span> <span className="text-indigo-800">Developing</span></h1>
-            <p className="text-2xl text-slate-500 mt-6">A frontend developer working with JavaScript, PHP and CSS.</p>
+          <div className="">
+            <h1 className="text-5xl sm:text-7xl md:text-9xl font-bold text-indigo-700">
+              <div>Frontend</div>
+              <div>SEO</div>
+              <div>Accessibility</div>
+            </h1>
+          </div>
+          <div>
+            <p className="text-3xl text-slate-500 mt-8">I am a frontend developer working with Javascript, PHP, and CSS.</p>
           </div>
         </div>
       </div>
       <div className="absolute top-0 bottom-0 left-0 right-0">
-
+        {/* Background img. */}
       </div>
-
     </section >
   )
 }
+
+export default Hero;

@@ -1,17 +1,21 @@
 
 
 function About() {
+
+  const highlighted = "text-indigo-800 font-bold";
+
   return (
-    <div className="bg-gradient-to-l from-sky-100 to-indigo-300">
-      <div className="container relative mx-auto py-20 px-2">
-        <div className="absolute top-0 left-0 text-6xl p-8"><i className="fas fa-quote-left hidden"></i></div>
-        <div className="mx-auto" style={{ maxWidth: "50ch" }}>
-          <div className="font-thin text-center text-grey-100 text-4xl z-10">
-            <p>My name is Ross Findlay. I'm a frontend developer working with <span className="text-indigo-800 font-normal">PHP</span> and <span className="text-indigo-800 font-normal">Javascript</span>. I love <span className="text-indigo-800 font-normal">CSS</span> and the accessibility it offers. I have fun <span className="text-indigo-800 font-normal">coding</span> and I am motivated to <span className="text-indigo-800 font-normal">learn</span></p>.
+    <section>
+      <div className="container mx-auto py-36 px-8">
+        <h2 className="text-6xl text-slate-700">About me</h2>
+        <div className="mx-auto mt-12">
+          <div className="text-3xl text-slate-500 mt-8">
+            <p className="mb-8">My name is Ross andd I'm a frontend developer with 5 years experience working with <span className={highlighted}>WordPress</span>, <span className={highlighted}>PHP</span>, <span className={highlighted}>CSS</span>, and <span className={highlighted}>Javascript</span>.</p>
+            <p>I have <span className={highlighted}>fun</span> coding tools that are <span className={highlighted}>accessible</span> to everyone.</p>
           </div>
         </div>
       </div>
-    </div>
+    </section>
   )
 }
 

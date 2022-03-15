@@ -22,13 +22,15 @@ function Header() {
   ];
 
   return (
-    <header className="py-5">
-      <div className="container mx-auto">
+    <header>
+      <div className="container relative mx-auto py-5 px-8">
         <div className="grid grid-cols-8 grid-rows-1 gap-4">
-          <div className="col-span-6 md:col-span-2 flex items-center">
-            <span><img src={logo} alt="logo" className="h-10 w-10 mr-4" /></span>
-            <h1 className="text-2xl font-light">Ross Findlay</h1>
+
+          <div className="col-span-6 md:col-span-6 flex items-center">
+            <span><img src={logo} alt="logo" className="h-10 w-10 mr-2" /></span>
+            <h1 className="text-3xl text-slate-600 font-bold">Ross Findlay</h1>
           </div>
+
           <div className="col-span-8 row-start-2 md:row-start-1 md:col-span-4 flex items-center hidden">
             <nav>
               <ul className="flex">
@@ -38,9 +40,12 @@ function Header() {
               </ul>
             </nav>
           </div>
-          <div className="col-span-2 flex items-center justify-center">
+
+          {/* Hidden */}
+          <div className="col-span-2 flex items-center justify-center hidden">
             <span>🔧</span>
           </div>
+
         </div>
       </div>
     </header>
