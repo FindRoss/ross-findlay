@@ -1,13 +1,10 @@
-// source https://unsplash.com/photos/_gu7E90QChU?utm_source=unsplash&utm_medium=referral&utm_content=creditShareLink
-
 function Hero() {
-  // host on https://vercel.com 
   return (
     <section>
       <div className="container relative mx-auto py-36 px-8">
         <div className="flex flex-col justify-center">
-          <div className="">
-            <h1 className="text-5xl sm:text-7xl md:text-9xl font-bold text-indigo-700">
+          <div>
+            <h1 className="text-5xl sm:text-7xl md:text-7xl lg:text-9xl font-bold text-indigo-700">
               <div>Frontend</div>
               <div>SEO</div>
               <div>Accessibility</div>

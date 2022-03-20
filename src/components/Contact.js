@@ -1,7 +1,7 @@
 function Contact() {
 
   return (
-    <section>
+    <section id="contact">
       <div className="container mx-auto py-36 px-8">
         <div>
           <h2 className="text-6xl">Get in touch</h2>

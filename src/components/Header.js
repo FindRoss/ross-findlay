@@ -1,4 +1,5 @@
-import logo from '../assets/logo-plain.png';
+import logo from '../assets/rf-logo-indigo.svg';
+
 
 function Header() {
 
@@ -7,35 +8,35 @@ function Header() {
     //   title: "About me",
     //   href: "#about-section"
     // },
+    // {
+    //   title: "Tech",
+    //   href: "#tech-section"
+    // },
     {
-      title: "Tech",
-      href: "#tech-section"
-    },
-    {
-      title: "Code",
-      href: "#projects-section"
+      title: "Projects",
+      href: "#projects"
     },
     {
       title: "Get in touch",
-      href: "#contact-section"
+      href: "#contact"
     }
   ];
 
   return (
     <header>
-      <div className="container relative mx-auto py-5 px-8">
-        <div className="grid grid-cols-8 grid-rows-1 gap-4">
+      <div className="container mx-auto py-5 px-8">
+        <div className="flex items-center justify-center">
 
-          <div className="col-span-6 md:col-span-6 flex items-center">
+          <div className="flex items-center align-center">
             <span><img src={logo} alt="logo" className="h-10 w-10 mr-2" /></span>
-            <h1 className="text-3xl text-slate-600 font-bold">Ross Findlay</h1>
+            {/* <h1 className="text-3xl text-slate-600 font-bold">Ross Findlay</h1> */}
           </div>
-
-          <div className="col-span-8 row-start-2 md:row-start-1 md:col-span-4 flex items-center hidden">
+          <span className="text-4xl mx-8 text-slate-460">|</span>
+          <div className="flex items-center justify-end">
             <nav>
               <ul className="flex">
                 {headingLinks.map((link, index) => (
-                  <li className="px-4" key={index}><a href={link.href}>{link.title}</a></li>
+                  <li className="px-4 text-2xl text-slate-800" key={index}><a href={link.href}>{link.title}</a></li>
                 ))}
               </ul>
             </nav>
@@ -48,7 +49,7 @@ function Header() {
 
         </div>
       </div>
-    </header>
+    </header >
   );
 
 }
