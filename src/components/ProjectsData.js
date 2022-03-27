@@ -22,5 +22,13 @@ export const projectsData = [
     used: ['React'],
     github: 'https://github.com/FindRoss/Flashcards',
     website: 'https://flashcards-phi-two.vercel.app'
-  }
+  },
+  {
+    logo: '/assets/flashcards-logo.png',
+    title: 'Speller',
+    description: 'Javascript web app built with the MVC patter to learn some badly needed German.',
+    used: ['JavaScript'],
+    github: 'https://github.com/FindRoss/german-speller',
+    website: 'https://german-speller.vercel.app'
+  },
 ]

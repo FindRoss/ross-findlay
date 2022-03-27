@@ -3,66 +3,57 @@
 function Tech() {
 
   const techData = [
-    {
-      name: "HTML",
-      awesome: "fas fa-code",
-      desc: "Where my journey begun, I feel like I am still learning little tips and tricks about HTML still"
-    },
+    // {
+    //   name: "HTML",
+    //   awesome: "fas fa-code",
+    //   description: "Where my journey begun, I feel like I am still learning little tips and tricks about HTML still"
+    // },
     {
       name: "CSS",
       awesome: "fab fa-css3-alt",
-      desc: "I enjoy continally working on my CSS abilities, trying to create ever cleaner and more stable solutions, and learning new frameworks: check out <a target='_blank' href='https://evergreen.segment.com/'>Evergreen</a>, one of my favorites."
+      description: "I enjoy continally working on my CSS abilities, trying to create ever cleaner and more stable solutions, and learning new frameworks."
     },
     {
       name: "JavaScript",
       awesome: "fab fa-js",
-      desc: "I love working with JavaScript"
+      description: "I love working with JavaScript. The clean semantic code you can write with it."
     },
     {
       name: "React",
       awesome: "fab fa-react",
-      desc: "I have the same feeling about React as when I first tentatively started to learn it: It just make sense. Its practical, opens tons of opptunities, encorporates so many tools, and is easy to manage"
+      description: "I have the same feeling about React as when I first started to learn it: It just make sense. Its practical and opens tons of opptunities."
     },
     {
       name: "WordPress",
       awesome: "fab fa-wordpress-simple",
-      desc: "I have have worked with WordPress for four years, using it on every level, from content creator, to publisher, to SEO, to developer. The new Guttenberg editor is fantastic."
-    },
-    {
-      name: "NPM",
-      awesome: "fab fa-npm",
-      desc: "I DONT NEED THIS ONE ITS NOT REALLY A SKILL _ BETTER TO SAY GIT OR SOMETHING__ FIMGA"
-    },
-    {
-      name: "Bootstrap",
-      awesome: "fab fa-bootstrap",
-      desc: "I have spent a lot of time working with Bootstrap. "
+      description: "Building websites with WordPress has allowed me to work closely with content creators, making the most out of the Gutenburg Editor."
     },
     {
       name: "PHP",
-      awesome: "fab fa-php"
+      awesome: "fab fa-php",
+      description: "I have used PHP to get the most out of WordPress, creating resuable blocks, custom post types, and plugins ."
     }
   ];
 
   return (
-    <section className="py-20 hidden">
-      <div className="container max-auto">
-        <h2 className="text-3xl">Technology</h2>
-        <p className="text-2xl text-slate-500 mt-6">A few of the technongies I enjoy working with and learning about.</p>
-        <ul className="techs">
+    <section>
+      <div className="container mx-auto py-36">
+        <h2 className="text-6xl font-bold text-slate-700">Technology</h2>
+        <div className="text-3xl text-slate-500 mt-8">
+          <p>A few of the technongies I enjoy working with and learning about.</p>
+        </div>
+
+        <div className="grid sm:grid-cols-2 gap-4 sm:gap-12 mt-12">
           {techData.map((t, i) => {
             return (
-              <li key={i} className="tech">
-                <div className="tech-card">
-                  <span className="tech-card__icon">
-                    <i className={t.awesome}></i>
-                  </span>
-                  <h4>{t.name}</h4>
-                </div>
-              </li>
+              <div key={i} className="tech bg-slate-100 border p-6 sm:rounded text-center -ml-6 sm:ml-0 -mr-6 sm:mr-0">
+                <span className="text-indigo-700 text-3xl"><i className={t.awesome}></i></span>
+                <h4 className="font-bold text-slate-700 text-2xl mt-4">{t.name}</h4>
+                <p className="text-slate-700 mt-4">{t.description}</p>
+              </div>
             );
           })}
-        </ul>
+        </div>
       </div>
     </section>
   )

@@ -7,3 +7,9 @@ h6,
 .ff-header {
   font-family: "Ubuntu", sans-serif;
 }
+
+/* @media screen and (min-width: 900px) {
+  .tech:nth-child(even) {
+    transform: translateY(50%);
+  }
+} */
