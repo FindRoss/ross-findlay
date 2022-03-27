@@ -12,7 +12,7 @@ function Nav() {
             <span><img src={logo} alt="logo" className="h-10 w-10 mr-2" /></span>
           </div>
           <span className="text-1xl lg:text-4xl mx-8 text-slate-400 h-100">|</span>
-          <div className="flex items-center justify-end text-lg lg:text-2xl">
+          <div className="flex items-center justify-end text-lg lg:text-2xl hidden">
             <nav>
               <Link to="/a/about-router">Articles</Link>
             </nav>
