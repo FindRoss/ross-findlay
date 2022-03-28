@@ -1,5 +1,3 @@
-import { faHand } from "@fortawesome/free-solid-svg-icons";
-
 
 function About() {
 
