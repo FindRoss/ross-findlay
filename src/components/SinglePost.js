@@ -37,7 +37,7 @@ export default function SinglePost() {
   if (!postData) return <div className="container mx-auto py-14">Loading...</div>;
 
   return (
-    <div class="container mx-auto py-12">
+    <div className="container mx-auto py-12">
       <h2 className="text-6xl font-bold text-slate-700">{postData.title}</h2>
       <p className="text-3xl text-slate-500 mt-6">This could be a nice excerpt.</p>
       <img src={urlFor(postData.mainImage).width(200).url()} alt="" />
