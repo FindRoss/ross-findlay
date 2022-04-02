@@ -6,7 +6,7 @@ function Projects() {
 
   return (
     <section className="bg-slate-100" id="projects">
-      <div className="container mx-auto py-36">
+      <div className="container mx-auto py-14">
         <h2 className="text-6xl font-bold text-slate-700">Projects</h2>
         <p className="text-3xl text-slate-500 mt-8">Some of my personal and professional projects that I have had fun working on.</p>
 

@@ -4,28 +4,31 @@ import logo from '../assets/rf-logo-indigo.svg';
 
 function Nav() {
   return (
-    <header className="bg-slate-100">
-      <div className="container mx-auto py-5">
-        <div className="flex items-center">
-
-          <div className="flex items-center align-center">
-            <span><img src={logo} alt="logo" className="h-10 w-10 mr-2" /></span>
+    <>
+      <header className="bg-slate-100">
+        <div className="container mx-auto py-5">
+          <div className="flex items-center">
+            <div className="flex items-center align-center">
+              <Link to="/"><img src={logo} alt="logo" className="h-10 w-10 mr-2" /></Link>
+            </div>
+            <span className="text-1xl lg:text-4xl mx-8 text-slate-400 h-100">|</span>
+            <div className="flex items-center justify-end text-lg lg:text-2xl">
+              <nav>
+                <ul className="flex">
+                  <li className="px-4"><Link to="/projects">Projects</Link></li>
+                  <li className="px-4 hidden"><Link to="/articles">Articles</Link></li>
+                </ul>
+              </nav>
+            </div>
+            {/* Hidden */}
+            <div className="col-span-2 flex items-center justify-center hidden">
+              <span>🔧</span>
+            </div>
           </div>
-          <span className="text-1xl lg:text-4xl mx-8 text-slate-400 h-100">|</span>
-          <div className="flex items-center justify-end text-lg lg:text-2xl hidden">
-            <nav>
-              <Link to="/a/about-router">Articles</Link>
-            </nav>
-          </div>
-
-          {/* Hidden */}
-          <div className="col-span-2 flex items-center justify-center hidden">
-            <span>🔧</span>
-          </div>
-
         </div>
-      </div>
-    </header >
+      </header>
+    </>
+
   );
 
 }
