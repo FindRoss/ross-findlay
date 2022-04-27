@@ -40,7 +40,7 @@ export default function AllPosts() {
             <Link to={"/" + post.slug.current} key={post.slug.current}>
               <div className="p-4 rounded bg-slate-100 flex" key={index}>
                 <img src={urlFor(post.mainImage).width(200).url()} className="pr-4" alt="" />
-                <h2 className="text-2xl">{post.title}</h2>
+                <h2 className="text-3xl text-slate-700">{post.title}</h2>
               </div>
             </Link>
           ))}

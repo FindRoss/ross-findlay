@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 
 import AllPosts from "./components/AllPosts.js";
-import SinglePost from "./components/SinglePost.js";
+import SinglePost from "./components/SinglePost/SinglePost.js";
 import Home from "./components/Home.js";
 import Nav from './components/Nav';
 import Footer from './components/Footer';
