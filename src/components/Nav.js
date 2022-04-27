@@ -13,7 +13,7 @@ function Nav() {
               <nav>
                 <ul className="flex">
                   <li className="px-4 text-slate-700"><Link to="/projects">Projects</Link></li>
-                  <li className="pl-4 text-slate-700"><Link to="/articles">Articles</Link></li>
+                  <li className="pl-4 text-slate-700 hidden"><Link to="/articles">Articles</Link></li>
                 </ul>
               </nav>
             </div>
