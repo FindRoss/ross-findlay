@@ -24,9 +24,9 @@ export const projectsData = [
     website: 'https://flashcards-phi-two.vercel.app'
   },
   {
-    logo: '/assets/flashcards-logo.png',
-    title: 'Speller',
-    description: 'Javascript web app built with the MVC patter to learn some badly needed German.',
+    logo: '/assets/german-speller-logo.png',
+    title: 'German Speller',
+    description: 'Javascript web app built with plain Javascript to learn some badly needed German.',
     used: ['JavaScript'],
     github: 'https://github.com/FindRoss/german-speller',
     website: 'https://german-speller.vercel.app'

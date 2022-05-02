@@ -8,7 +8,7 @@ function Project({ data }) {
   const buttonClass = "block uppercase text-sm text-slate-600 p-4";
 
   return (
-    <div className="bg-white rounded">
+    <div className="bg-white border rounded">
       <div className="p-6 flex flex-col items-center">
         <img src={logoFinder(title)} alt={title} className="w-12 h-12" />
         <h3 className="font-bold text-slate-700 text-1xl mt-6">{title}</h3>

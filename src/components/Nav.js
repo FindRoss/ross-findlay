@@ -5,9 +5,9 @@ import logo from '../assets/rf-logo-indigo.svg';
 function Nav() {
   return (
     <>
-      <header>
+      <header className="border-b-2">
         <div className="container mx-auto">
-          <div className="flex justify-between items-center py-5 border-b-2">
+          <div className="flex justify-between items-center py-5">
             <Link to="/"><img src={logo} alt="logo" className="h-14 w-14 mr-2" /></Link>
             <div className="flex items-center justify-end text-lg lg:text-2xl">
               <nav>
