@@ -1,16 +1,17 @@
-import Hero from './Hero';
-import About from './About';
-import Tech from './Tech';
-import Contact from './Contact';
+import Hero from './Home/Hero';
+import About from './Home/About';
+import Tech from './Home/Tech';
+import Contact from './Home/Contact';
+import Content from './Content';
 
 const Home = () => {
   return (
-    <>
+    <Content>
       <Hero />
       <About />
       <Tech />
       <Contact />
-    </>
+    </Content>
   )
 }
 

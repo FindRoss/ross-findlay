@@ -14,7 +14,7 @@ import './App.css';
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
+      <div className="App min-h-screen flex flex-col">
         <Nav />
         <Routes>
           <Route exact element={<Home />} path="/"></Route>
