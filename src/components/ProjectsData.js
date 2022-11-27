@@ -5,7 +5,7 @@ export const projectsData = [
     description: 'Track the current Apex Legends live map across four different game modes',
     used: ['React', 'Tailwind'],
     github: 'https://github.com/FindRoss/apex-map-rotation',
-    website: 'https://apexlegendsmap.com'
+    website: 'https://apex-map-rotation.vercel.app/'
   },
   {
     logo: '/assets/save-the-date-logo.svg',

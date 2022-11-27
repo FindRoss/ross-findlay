@@ -18,6 +18,10 @@ h6,
   font-family: "Ubuntu", sans-serif;
 }
 
+header nav li .active {
+  color: blue;
+}
+
 /* @media screen and (min-width: 900px) {
   .tech:nth-child(even) {
     transform: translateY(50%);
