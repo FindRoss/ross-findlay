@@ -81,6 +81,7 @@ function ContactForm() {
             onChange={handleOnChange}
             required
             value={inputs.message}
+            rows="4"
             className="w-full mt-2 p-2"
           />
         </div>
@@ -91,13 +92,14 @@ function ContactForm() {
                 ? 'Submit'
                 : 'Submitted'
               : 'Submitting...'}
+            <i class="ml-1 fa-solid fa-arrow-right"></i>
           </button>
         </div>
       </form>
       {status.info.error && (
         <div className="error">Error: {status.info.msg}</div>
       )}
-      {!status.info.error && status.info.msg && <p>{status.info.msg}</p>}
+      {!status.info.error && status.info.msg && <div className="text-content text-lg text-slate-800"><p>{status.info.msg}</p></div>}
     </div>
   );
 };

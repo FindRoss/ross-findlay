@@ -9,10 +9,7 @@ function Nav() {
         <div className="container mx-auto">
           <div className="flex justify-between items-center py-5">
             <NavLink to="/">
-              {/* <div className="flex items-center"> */}
-              {/* <img src={logo} alt="logo" className="h-14 w-14 mr-2" /> */}
               <span className="text-2xl md:text-3xl font-bold text-slate-700">Ross Findlay</span>
-              {/* </div> */}
             </NavLink>
             <div className="flex items-center justify-end text-lg lg:text-2xl">
               <nav>

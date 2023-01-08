@@ -1,6 +1,5 @@
 
 function About() {
-  const highlighted = "text-indigo-800 font-bold";
   const techData = [
     {
       name: "CSS",
@@ -54,6 +53,8 @@ function About() {
     }
   ];
 
+  const highlighted = "text-blue-600 font-bold";
+
   return (
     <>
       {/* bg-gradient-to-t from-slate-100 via-indigo-100 to-indigo-200 relative */}
@@ -66,9 +67,9 @@ function About() {
             {/* Grid Col */}
             <div className="col-span-2">
               <h3 className="text-3xl font-bold text-slate-700">Get to know me</h3>
-              <div className="mt-4 ">
-                <p>My name is Ross and I code things with <span className={highlighted}>WordPress</span>, <span className={highlighted}>PHP</span>, <span className={highlighted}>CSS</span>, and <span className={highlighted}>Javascript</span>.</p>
-                <p>I create websites that are <span className={highlighted}>accessible</span> to everyone.</p>
+              <div className="text-content text-lg text-slate-800">
+                <p>My name is Ross and I code things with WordPress, PHP, CSS, and Javascript.</p>
+                <p>I create websites that are accessible to everyone.</p>
               </div>
             </div>
             {/* Grid Col */}

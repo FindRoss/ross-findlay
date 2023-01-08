@@ -16,7 +16,7 @@ function Projects() {
         `*[_type == "project"]{
           title,
           description, 
-          icon,
+          github,
           mainImage,
           url
         }`
@@ -36,7 +36,7 @@ function Projects() {
           {
             projectsData ? (
               projectsData.map((project, i) => {
-                const { title, description, url, icon, mainImage } = project;
+                const { title, description, url, github, mainImage } = project;
                 if (url) {
                   return (
                     <div key={title} className="md:flex md:flex-row-reverse mt-4 pt-4 border-t-2">
@@ -45,8 +45,11 @@ function Projects() {
                       </div>
                       <div class="mt-4 md:mt-0 md:mr-4 md:flex-1">
                         <h3 className="font-bold text-slate-700 text-2xl">{title}</h3>
-                        <p>{description}</p>
-                        <a href={url.current} target="_blank" rel="noreferrer" className="py-2 px-8 bg-blue-600 mt-4 rounded-full inline-block text-white font-bold">Visit</a>
+                        <div className="text-content text-lg text-slate-800">
+                          <p>{description}</p>
+                        </div>
+                        <a href={url.current} target="_blank" rel="noreferrer" className="py-2 px-8 bg-blue-600 mt-4 rounded-full inline-block text-white font-bold">Visit <i class="ml-1 fa-solid fa-globe"></i></a>
+                        <a href={github.current} target="_blank" rel="noreferrer" className="ml-1 py-2 px-8 bg-black mt-4 rounded-full inline-block text-white font-bold">GitHub <i class="ml-2 fa-brands fa-github"></i></a>
                       </div>
                     </div>
                   )
