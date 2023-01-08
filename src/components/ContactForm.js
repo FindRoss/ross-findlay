@@ -86,7 +86,7 @@ function ContactForm() {
           />
         </div>
         <div className="mt-4">
-          <button type="submit" disabled={status.submitting} className="py-2 px-8 bg-blue-600 rounded-full inline-block text-white font-bold">
+          <button type="submit" disabled={status.submitting} className="py-2 px-8 bg-blue-600 hover:bg-blue-800 rounded-full inline-block text-white font-bold">
             {!status.submitting
               ? !status.submitted
                 ? 'Submit'

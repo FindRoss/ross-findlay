@@ -5,7 +5,7 @@ function Hero() {
         <div className="flex flex-col items-center">
           <h1 className="text-5xl md:text-7xl font-bold text-slate-700 uppercase text-center">Hey, I'm Ross Findlay</h1>
           <p className="text-3xl text-slate-500 mt-8 max-w-xl text-center">I am a frontend developer working with Javascript, PHP, and CSS.</p>
-          <a href="#projects" className="py-2 px-8 bg-blue-600 mt-4 rounded-full inline-block text-white font-bold">Projects <i class="ml-1 fa-solid fa-arrow-down"></i></a>
+          <a href="#projects" className="py-2 px-8 bg-blue-600 hover:bg-blue-800 mt-4 rounded-full inline-block text-white font-bold">Projects <i class="ml-1 fa-solid fa-arrow-down"></i></a>
         </div>
       </div>
     </section>

@@ -35,7 +35,7 @@ function Projects() {
           {/* tech bg-slate-100 border p-6 sm:rounded text-center -ml-6 sm:ml-0 -mr-6 sm:mr-0 */}
           {
             projectsData ? (
-              projectsData.map((project, i) => {
+              projectsData.map((project) => {
                 const { title, description, url, github, mainImage } = project;
                 if (url) {
                   return (
@@ -48,8 +48,8 @@ function Projects() {
                         <div className="text-content text-lg text-slate-800">
                           <p>{description}</p>
                         </div>
-                        <a href={url.current} target="_blank" rel="noreferrer" className="py-2 px-8 bg-blue-600 mt-4 rounded-full inline-block text-white font-bold">Visit <i class="ml-1 fa-solid fa-globe"></i></a>
-                        <a href={github.current} target="_blank" rel="noreferrer" className="ml-1 py-2 px-8 bg-black mt-4 rounded-full inline-block text-white font-bold">GitHub <i class="ml-2 fa-brands fa-github"></i></a>
+                        <a href={url.current} target="_blank" rel="noreferrer" className="py-2 px-8 bg-blue-600 hover:bg-blue-800 mt-4 rounded-full inline-block text-white font-bold">Visit <i class="ml-1 fa-solid fa-globe"></i></a>
+                        <a href={github.current} target="_blank" rel="noreferrer" className="ml-1 py-2 px-8 bg-black hover:bg-slate-800 mt-4 rounded-full inline-block text-white font-bold">GitHub <i class="ml-2 fa-brands fa-github"></i></a>
                       </div>
                     </div>
                   )
