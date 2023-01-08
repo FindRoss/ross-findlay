@@ -1,24 +1,14 @@
 function Hero() {
   return (
-    <section>
+    <section className="hero-section">
       <div className="container relative mx-auto py-36">
-        <div className="flex flex-col justify-center">
-          <div>
-            <h1 className="text-5xl sm:text-7xl md:text-7xl lg:text-9xl font-bold">
-              {/* <div className="text-indigo-700">Frontend</div>
-              <div className="text-indigo-600">SEO</div>
-              <div className="text-indigo-500">Accessibility</div> */}
-              <div className="text-slate-700">Frontend</div>
-              <div className="text-slate-700">SEO</div>
-              <div className="text-slate-700">Accessibility</div>
-            </h1>
-          </div>
-          <div>
-            <p className="text-3xl text-slate-500 mt-8">I am a frontend developer working with Javascript, PHP, and CSS.</p>
-          </div>
+        <div className="flex flex-col items-center">
+          <h1 className="text-5xl md:text-7xl font-bold text-slate-700 uppercase text-center">Hey, I'm Ross Findlay</h1>
+          <p className="text-3xl text-slate-500 mt-8 max-w-xl text-center">I am a frontend developer working with Javascript, PHP, and CSS.</p>
+          <a href="#projects" className="py-2 px-8 bg-blue-600 mt-4 rounded-full inline-block text-white font-bold">Projects</a>
         </div>
       </div>
-    </section >
+    </section>
   )
 }
 

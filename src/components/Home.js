@@ -1,6 +1,6 @@
 import Hero from './Home/Hero';
 import About from './Home/About';
-import Tech from './Home/Tech';
+import Projects from './Home/Projects';
 import Contact from './Home/Contact';
 import Content from './Content';
 
@@ -9,7 +9,7 @@ const Home = () => {
     <Content>
       <Hero />
       <About />
-      <Tech />
+      <Projects />
       <Contact />
     </Content>
   )
