@@ -1,5 +1,5 @@
 import { NavLink } from "react-router-dom";
-// import logo from '../assets/rf-logo-indigo.svg';
+import pdf from '../resume.pdf';
 
 
 function Nav() {
@@ -16,6 +16,7 @@ function Nav() {
                 <ul className="flex">
                   <li className="px-4 text-slate-700" hidden><NavLink to="/projects">Projects</NavLink></li>
                   <li className="pl-4 text-slate-700" hidden><NavLink to="/articles">Articles</NavLink></li>
+                  <a href={pdf} target="_blank">Resume</a>
                 </ul>
               </nav>
             </div>
