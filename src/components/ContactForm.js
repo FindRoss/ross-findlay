@@ -1,5 +1,8 @@
 import React, { useState } from 'react';
 import axios from 'axios';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faArrowRight } from '@fortawesome/free-solid-svg-icons';
+
 
 function ContactForm() {
   const [status, setStatus] = useState({
@@ -92,7 +95,7 @@ function ContactForm() {
                 ? 'Submit'
                 : 'Submitted'
               : 'Submitting...'}
-            <i class="ml-1 fa-solid fa-arrow-right"></i>
+            <FontAwesomeIcon icon={faArrowRight} className="ml-2" />
           </button>
         </div>
       </form>

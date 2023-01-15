@@ -1,6 +1,9 @@
 import { useState, useEffect } from 'react';
 import sanityClient from "../../client.js";
 import imageUrlBuilder from "@sanity/image-url";
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faExternalLink } from '@fortawesome/free-solid-svg-icons';
+import { faGithub } from '@fortawesome/free-brands-svg-icons';
 
 const builder = imageUrlBuilder(sanityClient);
 function urlFor(source) {
@@ -32,7 +35,7 @@ function Projects() {
         <p className="mt-4 text-2xl text-slate-500 max-w-prose">A number of the projects I am enjoy creating or am still working on.</p>
 
         <div className="grid sm:grid-cols-1 gap-4 sm:gap-12 mt-12">
-          {/* tech bg-slate-100 border p-6 sm:rounded text-center -ml-6 sm:ml-0 -mr-6 sm:mr-0 */}
+
           {
             projectsData ? (
               projectsData.map((project) => {
@@ -48,8 +51,14 @@ function Projects() {
                         <div className="text-content text-lg text-slate-800">
                           <p>{description}</p>
                         </div>
-                        <a href={url.current} target="_blank" rel="noreferrer" className="py-2 px-8 bg-blue-600 hover:bg-blue-800 mt-4 rounded-full inline-block text-white font-bold">Visit <i class="ml-1 fa-solid fa-globe"></i></a>
-                        <a href={github.current} target="_blank" rel="noreferrer" className="ml-1 py-2 px-8 bg-black hover:bg-slate-800 mt-4 rounded-full inline-block text-white font-bold">GitHub <i class="ml-2 fa-brands fa-github"></i></a>
+                        <a href={url.current} target="_blank" rel="noreferrer" className="py-2 px-8 bg-blue-600 hover:bg-blue-800 mt-4 rounded-full inline-block text-white font-bold">
+                          Visit
+                          <FontAwesomeIcon icon={faExternalLink} className="ml-2" />
+                        </a>
+                        <a href={github.current} target="_blank" rel="noreferrer" className="ml-2 py-2 px-8 bg-black hover:bg-slate-800 mt-4 rounded-full inline-block text-white font-bold">
+                          GitHub
+                          <FontAwesomeIcon icon={faGithub} className="ml-2" />
+                        </a>
                       </div>
                     </div>
                   )

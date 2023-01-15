@@ -79,8 +79,6 @@ function About() {
                 {techData.map((t) => {
                   return (
                     <div key={t.name} className="tech bg-slate-100 border p-2 rounded flex items-center mb-2 mr-2">
-                      {/* -ml-6 sm:ml-0 -mr-6 sm:mr-0 */}
-                      {/* <span className="text-indigo-700 text-xl mr-1"><i className={t.awesome}></i></span> */}
                       <span className="font-bold text-slate-700 text-md">{t.name}</span>
                     </div>
                   );
