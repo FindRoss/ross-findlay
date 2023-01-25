@@ -61,15 +61,16 @@ function About() {
       <section className="">
         <div className="container mx-auto py-36">
           <h2 className="text-6xl font-bold text-slate-700">About me</h2>
-          <p className="mt-4 text-2xl text-slate-500 max-w-prose">Discover more information about my, what I do, and my skills.</p>
+          <p className="mt-4 text-2xl text-slate-500 max-w-prose">Hi, I'm Ross and I enjoy building accessible and user friendly websites and apps.</p>
 
           <div className="grid md:grid-cols-3 gap-4 mt-8">
             {/* Grid Col */}
             <div className="col-span-2">
               <h3 className="text-3xl font-bold text-slate-700">Get to know me</h3>
               <div className="text-content text-lg text-slate-800">
-                <p>My name is Ross and I code things with WordPress, PHP, CSS, and Javascript.</p>
-                <p>I create websites that are accessible to everyone.</p>
+                <p>I got into working with websites six years ago when I landed a position as a webmaster. This position involved everything from SEO, content writing, and maintaing websites. Straight away I realised I had a passion for working with HTML and CSS. </p>
+                <p>Since then I have delved deeper at every opportunity to learn more: writing clear HTML, using CSS grab users attention, building WordPress plugins to add functionality, leveraging JavasScript to make pages interactive.</p>
+                <p>Crrently I am learning all I can to be in the best position to start strong in my first full time developer position: React, Redux, Typescript, Node, and more. You can see how I have used these tools to create apps below.</p>
               </div>
             </div>
             {/* Grid Col */}
