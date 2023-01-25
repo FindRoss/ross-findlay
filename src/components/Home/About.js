@@ -7,7 +7,7 @@ function About() {
       description: "I enjoy continally working on my CSS abilities, trying to create ever cleaner and more stable solutions, and learning new frameworks."
     },
     {
-      name: "JavaScript",
+      name: "JavaScript (ES6+)",
       awesome: "fab fa-js",
       description: "I love working with JavaScript. The clean semantic code you can write with it."
     },
@@ -22,7 +22,7 @@ function About() {
       description: "Building websites with WordPress has allowed me to work closely with content creators, making the most out of the Gutenburg Editor."
     },
     {
-      name: "PHP",
+      name: "GraphQL",
       awesome: "fab fa-php",
       description: "I have used PHP to get the most out of WordPress, creating resuable blocks, custom post types, and plugins ."
     },
@@ -32,12 +32,12 @@ function About() {
       description: ""
     },
     {
-      name: "Sanity",
+      name: "Node",
       awesome: "",
       description: ""
     },
     {
-      name: "Git",
+      name: "Redux Toolkit",
       awesome: "",
       description: ""
     },
