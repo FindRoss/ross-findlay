@@ -32,6 +32,11 @@ function About() {
       description: ""
     },
     {
+      name: "Typescript",
+      awesome: "",
+      description: ""
+    }
+    {
       name: "Node",
       awesome: "",
       description: ""
