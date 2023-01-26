@@ -35,7 +35,7 @@ function About() {
       name: "Typescript",
       awesome: "",
       description: ""
-    }
+    },
     {
       name: "Node",
       awesome: "",
@@ -75,7 +75,7 @@ function About() {
               <div className="text-content text-lg text-slate-800">
                 <p>I got into working with websites six years ago when I landed a position as a webmaster. This position involved everything from SEO to content writing and maintaining websites. Straight away I realised I had a passion for working with HTML and CSS. </p>
                 <p>Since then I have delved deeper at every opportunity to learn more: writing clear HTML, using CSS to grab users' attention, building WordPress plugins to add functionality, and leveraging JavasScript to make pages interactive.</p>
-                <p>Crrently I am learning all I can to be in the best position to start strong in my first full-time developer position: React, Redux, Typescript, Node, and more.</p>
+                <p>Currently I am learning all I can to be in the best position to start strong in my first full-time developer position: React, Redux, Typescript, Node, and more.</p>
                 <p>You can see below how I have used these tools to learn and create projects that interest and challenge me.</p>
               </div>
             </div>
