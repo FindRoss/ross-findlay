@@ -4,9 +4,6 @@ import Link from "next/link";
 
 const POST_QUERY = `*[_type == "post" && slug.current == $slug][0]`;
 
-
-
-
 const options = { next: { revalidate: 30 } };
 
 export default async function PostPage({
